@@ -2,3 +2,9 @@ helloworld:
   build: .
   ports:
     - "80:80"
+  environment:
+    TARGET_IMAGE: maroshii/test-image
+    PR_URL: http://github.com/maroshii/ui-bot-placeholder/pulls/5
+    PR_TITLE: This is my PR Title
+    GIT_SHA: qwerty
+    SERVICE_NAME: uibot-5
